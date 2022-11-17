@@ -252,7 +252,7 @@
 
     .pc-tab {
         width: 100%;
-        max-width: 850px;
+        max-width: 870px;
         margin: 0 auto;
         /*ul {
         list-style: none;
@@ -281,6 +281,14 @@
       }*/
     }
 
+    .ul-tabs-custom-gc li label {
+        font-family: 'Mulish', sans-serif;
+        float: left;
+        padding: 10px 15px;
+        font-size: 14px;
+        background: transparent;
+        /*color: #444;*/
+    }
 
     #tab1:checked~.nav-tabs-custom .tab1,
     #tab2:checked~.nav-tabs-custom .tab2,
@@ -293,11 +301,27 @@
     #tab9:checked~.nav-tabs-custom .tab9,
     #tab10:checked~.nav-tabs-custom .tab10 label {
         background: white;
-        border: none;
-        border-bottom: solid;
-        border-color: #FA5012;
-        color: #111;
+        border-bottom-style: solid;
+        border-bottom-color: #FA5012;
+        border-bottom-width: 3px;
+        color: #FA5012;
         position: relative;
+        transition: 200ms;
+    }
+
+    #tab1:hover~.nav-tabs-custom .tab1,
+    #tab2:hover~.nav-tabs-custom .tab2,
+    #tab3:hover~.nav-tabs-custom .tab3,
+    #tab4:hover~.nav-tabs-custom .tab4,
+    #tab5:hover~.nav-tabs-custom .tab5,
+    #tab6:hover~.nav-tabs-custom .tab6,
+    #tab7:hover~.nav-tabs-custom .tab7,
+    #tab8:hover~.nav-tabs-custom .tab8,
+    #tab9:hover~.nav-tabs-custom .tab9,
+    #tab10:hover~.nav-tabs-custom .tab10 label {
+        color: #FA5012;
+        position: relative;
+        transition: 200ms;
     }
 
     .ul-tabs-custom-gc {
@@ -324,15 +348,7 @@
         padding: 0;
     }
 
-    .ul-tabs-custom-gc li label {
-        font-family: 'Mulish', sans-serif;
-        float: left;
-        padding: 10px 15px;
-        border-bottom: 0;
-        font-size: 14px;
-        background: transparent;
-        color: #444;
-    }
+
 
     /*.section-tabs {
         padding-left: 200px;
